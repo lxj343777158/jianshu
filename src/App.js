@@ -1,13 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { ResetGlobalStyled } from "./style";
 import Header from "./common/header";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <Fragment>
+    <Provider store={store}>
       <ResetGlobalStyled />
       <Header />
-    </Fragment>
+    </Provider>
   );
 }
 
