@@ -1,9 +1,14 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
+import { WritterWrapper } from "../style";
+import { connect } from "react-redux";
 
-class Writer extends Component {
+class Writter extends PureComponent {
   render() {
-    return <div>Writer</div>;
+    return <WritterWrapper>Writter</WritterWrapper>;
   }
 }
 
-export default Writer;
+export default connect(
+  null,
+  null
+)(Writter);
